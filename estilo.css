@@ -1,0 +1,110 @@
+body{background-image:url(imagenes/fondo4.png);
+    width:100;
+    height:100;
+
+    background-size:
+}
+
+.contenido{  
+    padding: 50px 100px;
+    width: 1000px;
+    height: 400px;
+    margin: 80px;
+    background: #fcfbff;
+    background-size: auto;
+    display: flex;
+    
+}
+
+
+h1{ 
+    color: rgb(250, 114, 3);
+    width:100%;
+    font-size: 70px;
+    list-style-type: none;
+    text-align: center;}
+
+    
+ h2{ background-color: #fafafd;
+    color: #e92727;
+        width:100%;
+        list-style-type: none;
+        text-align: center;}p {
+            font-family: "Consolas", monospace;
+          }
+          
+       
+       
+        h3{ background-color: #eaf0e4;
+            color: #0a0a0a;
+                width:100%;
+                list-style-type: none;
+                text-align: center;}
+    
+nav ul{
+    background: #11b8e2;
+    color:#170f3b
+    width:100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex ;
+}
+nav a {
+    text-decoration:none;
+    color: rgb(78, 18, 18);
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background:rgb(74, 199, 95);
+    color: #170f3b;
+    size: medium;
+}
+.logo {
+        
+        float: right;
+        width: 150px;
+        height: 150px;
+        border-radius: ;
+        margin: 30%;
+        border:2px solid rgb(243, 237, 237);
+        display: block;
+    }
+ {
+
+    }
+.articulos {
+width:70%;
+border-right: 3px solid rgb(207, 40, 40);
+}
+.secciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+}
+.menu-secundario {
+    width: 20%;
+    margin-top: 60px ;
+}
+.menu-secundario a {
+    display: block;
+    text-align: center;
+    color: rgb(59, 146, 59) ;
+    margin-bottom: 20px;
+}
+footer{
+    width: 100%;
+    height: 50%;
+    background: #ecb9bd;
+    color: rgb(29, 23, 23);
+    margin-top: 30px;
+    text-align: center;
+  
+}
+footer p{ 
+    text-align: center;
+    padding: 30px;
+}
