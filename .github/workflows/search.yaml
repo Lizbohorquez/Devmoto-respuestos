@@ -1,0 +1,30 @@
+name: secrest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  search-repositories:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: secrets
+        id: search
+        run: |
+          searchValue="accesskey"
+          repositories=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/user/repos" | jq -r '.[].full_name')
+
+          for repository in $repositories; do
+            environments=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$repository/actions/secrets" | jq -r '.environments[]')
+
+            for environment in $environments; do
+              echo "Repository: $repository"
+              echo "Environment: $environment"
+              echo "---"
+            done
+          done
+
+          
